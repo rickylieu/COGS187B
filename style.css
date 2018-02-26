@@ -181,7 +181,6 @@ img {
 .mu-main-navbar {
   background-color: transparent;
   border: none;
-  padding: 20px 0;
   border-radius: 0;
   margin-bottom: 0;
   -webkit-transition: all 0.5s;
@@ -229,10 +228,12 @@ img {
   transition: all 0.5s;
 }
 
-.mu-main-navbar .navbar-header .navbar-brand img {
-  margin-top: -10px;
-  height:auto;
-  width:auto;
+.mu-main-navbar .navbar-brand img {
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  width:70%;
 }
 
 
@@ -289,9 +290,16 @@ img {
 #mu-slider {
   display: inline;
   float: left;
-  margin-top: 90px;
+  margin-top: 40px;
   width: 100%;
   position: relative;
+}
+
+.mu-top-slider-single #logo {
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  width:75%;
 }
 
 .mu-slider-area {
