@@ -36,7 +36,8 @@ jQuery(function($){
       speed: 500,     
       autoplay: true,
       fade: true,
-      cssEase: 'linear'
+      cssEase: 'linear',
+      dots: false
     });
 
   /* ----------------------------------------------------------- */
