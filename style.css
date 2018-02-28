@@ -1842,3 +1842,15 @@ RESERVATION SECTION
 
   
 }
+
+div.alumfigure img,
+div.alumfigure div.alumcaption {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+div.alumfigure div {
+    overflow: hidden;
+
+    
+}
