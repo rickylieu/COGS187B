@@ -3,7 +3,7 @@
   Author : MarkUps
   Author URI: http://www.markups.io/
   Version: 1.0
-  Tags: light, white, restaurant, multi page, landing page, custom-colors, Bootstrap, responsive, html5, css3, Sass, template, web template
+  Tags: light, white, pillars, multi page, landing page, custom-colors, Bootstrap, responsive, html5, css3, Sass, template, web template
 
 */
 
@@ -171,7 +171,7 @@ img {
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 999; 
 }
 
 
@@ -216,11 +216,8 @@ img {
   color: #333;
   display: inline-block;
   font-weight: 700;
-  font-size: 35px;  
-  padding: 0;
-  margin-top: 16px;
-  height: 34px;
-  width: 180px;
+  font-size: 20px;  
+  padding: 15px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -229,23 +226,12 @@ img {
 }
 
 .mu-main-navbar .navbar-brand img {
-  margin-top: -30px;
   margin-left: auto;
   margin-right: auto;
   display:block;
   width:70%;
 }
 
-
-.mu-main-navbar .navbar-header .navbar-brand-small {
-  height: 20px;
-  margin-top: 16px;
-  width: 105px;
-}
-
-.mu-main-navbar .navbar-header .navbar-brand-small span {
-  margin-top: -4px;
-}
 
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
@@ -449,7 +435,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .mu-about-us-area {
@@ -468,7 +454,7 @@ img {
 }
 
 .mu-about-us-right ul {
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
   padding-left: 25px;
 }
 
@@ -598,43 +584,43 @@ img {
  MENU ITEM SECTION
 ====================*/
 
-#mu-restaurant-menu {
+#mu-pillars {
   display: inline;
   float: left;
   width: 100%;
   padding: 100px 0;
 }
 
-.mu-restaurant-menu-area {
+.mu-pillars-area {
   display: inline;
   float: left;
   width: 100%;
 }
 
-.mu-restaurant-menu-content {
+.mu-pillars-content {
   display: inline;
   float: left;
   margin-top: 30px;
   width: 100%;
 }
 
-.mu-restaurant-menu {
+.mu-pillars {
   display: inline-block;
   width: 100%;
   text-align: center;
   border: none;
 }
 
-.mu-restaurant-menu li {
+.mu-pillars li {
   display: inline-block;
   float: none;
 }
 
-.mu-restaurant-menu li a {
+.mu-pillars li a {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   border-radius: 0;
-  color: #fff;
+  color: #000;
   font-size: 18px;
   margin: 0 15px;
   -webkit-transition: all 0.5s;
@@ -644,11 +630,21 @@ img {
   transition: all 0.5s;
 }
 
-.mu-restaurant-menu li a:hover,
-.mu-restaurant-menu .active a,
-.mu-restaurant-menu .active a:hover,
-.mu-restaurant-menu .active a:focus {
+.mu-pillars li a:hover,
+.mu-pillars .active a,
+.mu-pillars .active a:hover,
+.mu-pillars .active a:focus {
   background-color: #FFF;
+}
+
+.mu-pillars .active a {
+  border: 0;
+  box-shadow: 0 2px 6px 0;
+  hsla(0, 0%, 0%, 0.2);
+}
+
+.mu-tab-content-area .tab-title {
+  text-align: center;
 }
 
 .mu-tab-content-area {
@@ -672,7 +668,7 @@ img {
   width: 100%;
 }
 
-.mu-menu-item-nav li {
+.mu-item-nav li {
   border-bottom: 1px dashed #ccc;
   display: inline;
   float: left;
@@ -681,29 +677,29 @@ img {
   width: 100%;
 }
 
-.mu-menu-item-nav li:last-child {
+.mu-item-nav li:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
 
-.mu-menu-item-nav li .media .media-left {
+.mu-item-nav li .media .media-left {
   width: 110px;
   height: 110px;
 }
 
-.mu-menu-item-nav li .media .media-left a,
-.mu-menu-item-nav li .media .media-left a img {
+.mu-item-nav li .media .media-left a,
+.mu-item-nav li .media .media-left a img {
   display: block;
   width: 110px;
   height: 110px;
 }
 
-.mu-menu-item-nav li .media .media-body .media-heading {
+.mu-item-nav li .media .media-body .media-heading {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.mu-menu-item-nav li .media .media-body .media-heading a {
+.mu-item-nav li .media .media-body .media-heading a {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -711,14 +707,14 @@ img {
   transition: all 0.5s;
 }
 
-.mu-menu-item-nav li .media .media-body .mu-menu-price {
+.mu-item-nav li .media .media-body .mu-menu-price {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1.5px;
   line-height: 20px;
 }
 
-.mu-menu-item-nav li .media .media-body p {
+.mu-item-nav li .media .media-body p {
   margin-top: 10px;
   font-size: 14px;
 }
@@ -1590,10 +1586,6 @@ RESERVATION SECTION
 
 @media (max-width: 767px) {
 
-  #mu-header {
-    padding: 0 15px;
-  }
-
   .navbar-default .navbar-toggle {
     border-radius: 0px;
   }
@@ -1638,7 +1630,7 @@ RESERVATION SECTION
     top: 18%;
   }
 
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li a {
+  #mu-pillars .mu-pillars-area .mu-pillars-content .mu-pillars li a {
     font-size: 16px;
     margin: 0 5px;
   }
@@ -1735,7 +1727,7 @@ RESERVATION SECTION
     height: 350px;
   }
 
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li {
+  #mu-pillars .mu-pillars-area .mu-pillars-content .mu-pillars li {
     margin-bottom: 10px;
   }
   
@@ -1754,7 +1746,7 @@ RESERVATION SECTION
     line-height: 25px;
   }
 
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li {
+  #mu-pillars .mu-pillars-area .mu-pillars-content .mu-pillars li {
     margin-bottom: 12px;
   }
 
@@ -1762,7 +1754,7 @@ RESERVATION SECTION
     padding: 100px 0 50px;
   }
 
-  #mu-restaurant-menu {
+  #mu-pillars {
     padding-bottom: 0px;
   }
 
@@ -1804,23 +1796,23 @@ RESERVATION SECTION
     font-size: 18px;
   }
 
-  .mu-menu-item-nav li {
+  .mu-item-nav li {
     text-align: center;
   }
 
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left {
+  #mu-pillars .mu-pillars-area .mu-pillars-content .mu-tab-content-area .mu-item-nav li .media .media-left {
     height: auto;
     width: 100%;
     margin-right: 0;
     float: left;
   }
 
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a{
+  #mu-pillars .mu-pillars-area .mu-pillars-content .mu-tab-content-area .mu-item-nav li .media .media-left a{
     display: inline-block;
     margin-bottom: 10px;
   }
 
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a img {
+  #mu-pillars .mu-pillars-area .mu-pillars-content .mu-tab-content-area .mu-item-nav li .media .media-left a img {
     display: inline-block;
   }
 
