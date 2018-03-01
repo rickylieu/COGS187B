@@ -447,9 +447,7 @@ img {
 .mu-about-us-right {
   display: inline;
   float: left;
-  margin-top: 20px;
-  padding-top: 30px;
-  padding-left: 15px;
+  padding-left: 25px;
   width: 100%;
 }
 
@@ -474,7 +472,7 @@ img {
   float: left;
   margin-top: 20px;
   padding-top: 30px;
-  padding-right: 15px;
+  padding-right: 25px;
   width: 100%;
 }
 
@@ -493,7 +491,7 @@ img {
 }
 
 .mu-title h2 {
-  color: #000;
+  color: white;
   font-size: 35px;
   margin-bottom: 5px;
 }
@@ -1834,4 +1832,16 @@ RESERVATION SECTION
   }
 
   
+}
+
+div.alumfigure img,
+div.alumfigure div.alumcaption {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+div.alumfigure div {
+    overflow: hidden;
+
+    
 }
