@@ -718,12 +718,21 @@ img {
   font-size: 14px;
 }
 
-.kapwatao-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-bottom:50px;
+.named-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom:50px;
+}
+
+.non-named-img {
+  opacity:40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 /*==================
