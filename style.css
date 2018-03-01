@@ -1870,7 +1870,19 @@ div.alumfigure div {
     
 }
 
-h3.events-text {
+
+h4.events-header {
   word-wrap: break-word;
   text-align: center;
+  color: rgb(255, 165, 0);
+}
+
+h5.events-text {
+  word-wrap: break-word;
+  text-align: center
+}
+
+.events-modal-title {
+  text-align: center;
+  color: rgb(255, 165, 0);
 }
