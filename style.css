@@ -590,9 +590,10 @@ img {
 }
 
 .mu-pillars-area {
-  display: inline;
-  float: left;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85.5%;
 }
 
 .mu-pillars-content {
@@ -1752,7 +1753,6 @@ RESERVATION SECTION
   #mu-pillars .mu-pillars-area .mu-pillars-content .mu-pillars li {
     margin-bottom: 10px;
   }
-  
   
 }
 
