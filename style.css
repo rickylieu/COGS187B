@@ -980,10 +980,10 @@ RESERVATION SECTION
   position: relative;
   min-height: 350px;
   max-height: 350px;
-  border-style: solid;
   background-color: rgb(242, 244, 247);
-  border-color: black;
-  border-radius: 5px;
+  border-bottom: 3px solid;
+  border-top: 3px solid;
+  border-color: rgb(255, 165, 0);
 }
 
 .mu-single-gallery .mu-single-gallery-item:hover .mu-single-gallery-info {
@@ -991,6 +991,9 @@ RESERVATION SECTION
   opacity: 1;
   min-height: 345px;
   max-height: 345px;
+  text-align: center;
+  margin: auto;
+  display: block;
 }
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img {
@@ -1881,6 +1884,8 @@ div.alumfigure div {
 }
 
 
+
+/* Events CSS */
 h4.events-header {
   word-wrap: break-word;
   text-align: center;
@@ -1896,3 +1901,31 @@ h5.events-text {
   text-align: center;
   color: rgb(255, 165, 0);
 }
+
+.events-modal-text {
+  color: rgb(255, 165, 0);
+  padding-bottom: 5px;
+}
+
+#winter-formal-img {
+  height: auto;
+  width: 75%;
+  text-align: center;
+  display: block;
+  margin:auto;
+  padding-bottom: 10px;
+}
+
+#pcc-img {
+  height: auto;
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin:auto;
+  padding-bottom: 10px;
+}
+
+.events-modal-spacing {
+  line-height: 250%;
+}
+

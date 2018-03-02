@@ -65,7 +65,7 @@
           <!-- LOGO -->       
 
            <!--  Text based logo  -->
-          <a class="navbar-brand" href="index.html">Osteria<span>X</span></a> 
+           <a class="navbar-brand" href="index.html">KP</a>  
 
               <!--  Image based logo  -->
           <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>  -->
@@ -125,7 +125,7 @@
               <h2>Upcoming Events</h2>
             </div>
 
-            <div class="mu-gallery-content">
+            <div class="mu-gallery-content" >
             
               <!-- Start gallery image -->
               <div class="mu-gallery-body">
@@ -163,11 +163,14 @@
                 <!-- start single gallery image -->
                 <div class="mu-single-gallery col-md-4">                  
                      <div class="mu-single-gallery-item">
-                      <figure class="mu-single-gallery-img">
-                          <img alt="img" src="assets/img/gallery/3.jpg">
+                      <figure data-toggle="modal" data-target='#placeholderModal' class="mu-single-gallery-img">
+                          <img alt="img" src="assets/img/pcc.jpg">
                            <div class="mu-single-gallery-info">
                               <img class="mu-view-btn" src="assets/img/plus.png" alt="plus icon img">
                           </div> 
+
+                            <h4 class="events-header"> Placeholder</h4>
+                            <h5 class="events-text"> Placeholder since KP doesn't have many upcoming events currently but would like to show the format </h5>
                       </figure>            
                     </div>
                 </div>               
@@ -194,18 +197,14 @@
         <h4 class="events-modal-title">Winter Formal 2018: See the Light</h4>
       </div>
       <div class="modal-body">
-          <img  alt="img" src="assets/img/winter_formal.png"> </img>
-          <p> <b> What: </b> Get TANGLED up in all the fun at KP's annual semi-formal! <br> <br>
-              <b> When: </b> March 10, 2018 (Saturday after week 9) || 7-11PM || Doors open at 6:30 PM <br> <br>
-              <b> Where: </b> 2875 Dewey Rd, San Diego, CA 92106-6009 <br> <br>
-              <b> Details: </b> Tickets can only be bought from a board member so message one of us or check out our office hours! Tickets are $35 for the first 75 people and $40 after! Ticket sales will end on Wednesday, March 8. Your ticket guarantees entry, a 21+ bar, photos taken by Jasmine Atanacio and a lit night with dancing and food! When you purchase your ticket, you will also have the opportunity to nominate people for the Royal Court!  <br> <br>
-
-              <a href="https://www.facebook.com/events/1917630595215523/"> Facebook Event Page  </a>
+          <img id="winter-formal-img" alt="img" src="assets/img/winter_formal.png"> </img>
+          <p> <b class="events-modal-text"> What: </b> Get TANGLED up in all the fun at KP's annual semi-formal! <br class="events-modal-spacing">
+              <b class="events-modal-text"> When: </b> March 10, 2018 (Saturday after week 9) || 7-11PM || Doors open at 6:30 PM <br class="events-modal-spacing">
+              <b class="events-modal-text"> Where: </b> 2875 Dewey Rd, San Diego, CA 92106-6009 <br class="events-modal-spacing">
+              <b class="events-modal-text"> Details: </b> Tickets can only be bought from a board member so message one of us or check out our office hours! Tickets are $35 for the first 75 people and $40 after! Ticket sales will end on Wednesday, March 8. Your ticket guarantees entry, a 21+ bar, photos taken by Jasmine Atanacio and a lit night with dancing and food! When you purchase your ticket, you will also have the opportunity to nominate people for the Royal Court!  
+              For more information, check out our  <br> <a href="https://www.facebook.com/events/1917630595215523/" style="color: rgb(255, 165, 0);"> Facebook Event Page  </a> </br>
 
           </p> 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
 
@@ -223,16 +222,34 @@
         <h4 class="events-modal-title">Pilipin@ Cultural Celebration (PCC)</h4>
       </div>
       <div class="modal-body">
-          <img alt="img" src="assets/img/pcc.jpg">
+          <img id="pcc-img" alt="img" src="assets/img/pcc.jpg">
           <p> 
-            <b> What: </b> Come together, build community, and participate in a beautiful production in solidarity. <br> <br>
-            <b> When: </b> April 27, 2018 || 7-10 PM || Doors open at 6 PM <br> <br>
-            <b> Where: </b> Mandeville Auditorium <br> <br>
-            <b> Details: </b> UCSD's Kaibigang Pilipin@ proudly presents to you its 27th year of the annual production of Pilipin@ Cultural Celebration (PCC), a student-led theatrical production that presents dancing, singing, music, and an original script. PCC’s purpose is to share the struggles and celebrations of our Pilipin@-American history and culture with the community through a theatrical presentation. Originally titled Pilipino Cultural Night, PCC started in the 1991-1992 academic school year. The name has changed because we are not just celebrating one night of performance, but an entire journey of struggle, cultural discovery and expression. Stay tuned for more details! <br> <br>
+            <b class="events-modal-text"> What: </b> Come together, build community, and participate in a beautiful production in solidarity. <br class="events-modal-spacing">
+            <b class="events-modal-text"> When: </b> April 27, 2018 || 7-10 PM || Doors open at 6 PM <br class="events-modal-spacing">
+            <b class="events-modal-text"> Where: </b> Mandeville Auditorium <br class="events-modal-spacing">
+            <b class="events-modal-text"> Details: </b> UCSD's Kaibigang Pilipin@ proudly presents to you its 27th year of the annual production of Pilipin@ Cultural Celebration (PCC), a student-led theatrical production that presents dancing, singing, music, and an original script. PCC’s purpose is to share the struggles and celebrations of our Pilipin@-American history and culture with the community through a theatrical presentation. Originally titled Pilipino Cultural Night, PCC started in the 1991-1992 academic school year. The name has changed because we are not just celebrating one night of performance, but an entire journey of struggle, cultural discovery and expression. Stay tuned for more details! <br class="events-modal-spacing">
           </p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="placeholderModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="events-modal-title">Placeholder </h4>
+      </div>
+      <div class="modal-body">
+          <img id="pcc-img" alt="img" src="assets/img/pcc.jpg">
+          <p> 
+            <b class="events-modal-text">  Placeholder <br class="events-modal-spacing">
+          </p>
       </div>
     </div>
 
