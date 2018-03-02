@@ -435,7 +435,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 
 .mu-about-us-area {
@@ -590,9 +590,10 @@ img {
 }
 
 .mu-pillars-area {
-  display: inline;
-  float: left;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85.5%;
 }
 
 .mu-pillars-content {
@@ -936,7 +937,8 @@ RESERVATION SECTION
 #mu-gallery {
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding-top: 20px;
+  padding-bottom: 0px;
   width: 100%;
 }
 
@@ -963,7 +965,8 @@ RESERVATION SECTION
   display: inline;
   float: left;
   margin-bottom: 30px;
-  width: 33.33%;
+  width: 33%;
+  height: 100%;
 }
 
 .mu-single-gallery:last-child {
@@ -975,11 +978,19 @@ RESERVATION SECTION
   float: left;
   width: 100%;
   position: relative;
+  min-height: 350px;
+  max-height: 350px;
+  border-style: solid;
+  background-color: rgb(242, 244, 247);
+  border-color: black;
+  border-radius: 5px;
 }
 
 .mu-single-gallery .mu-single-gallery-item:hover .mu-single-gallery-info {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
+  min-height: 345px;
+  max-height: 345px;
 }
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img {
@@ -1753,7 +1764,6 @@ RESERVATION SECTION
     margin-bottom: 10px;
   }
   
-  
 }
 
 @media (max-width: 360px) {
@@ -1773,7 +1783,7 @@ RESERVATION SECTION
   }
 
   #mu-about-us {
-    padding: 100px 0 50px;
+    padding: 25px 0;
   }
 
   #mu-pillars {
