@@ -59,6 +59,136 @@
     transform: translate(-50%, -50%);
     white-space:nowrap;
 }
+
+/*timeline*/
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 50px;
+  position: relative;
+
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
   </style>
 
   </head>
@@ -176,21 +306,162 @@
   </section>
   <!-- End slider  -->
 
-  <section>
-  
-    <div class="mu-about-us-right2" style="padding-top: 20px; padding-bottom: 20px;">
-     <div style= "text-align: left; line-height: 2;">
-                 Kaibigang Pilipin@ has come a long way in the past 25 years. Here are highlights of some of our accomplishments since our founding on April 6th, 1987. If you are a student, staff, faculty, or alumni who has something to contribute to this page, feel free to contact us at <a href="mailto:contact@ucsdkp.org"><font color="FFA500"><b> contact@ucsdkp.org</b></font></a>.</div></div>
-                
-
-</section>
 
 
+ <!-- start timeline  -->
+<div class="container">
+    <div class="page-header" style="padding-top: 30px">
+        <h1 id="timeline"><center>Timeline</center></h1>
+    </div>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>1987</b></font></h4>
+             
+            </div>
+            <div class="timeline-body">
+              <p>Kaibigang Pilipino (now known as Kaibigang Pilipin@) is registered as a student organization.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>1992</b></font></h4>
+            </div>
+            <div class="timeline-body">
+              <p>First High School Conference, Pilipino Cultural Night (now known as Pilipin@ Cultural Celebration), and Pilipino Graduation, are held.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>1995</b></font></h4>
+            </div>
+            <div class="timeline-body">
+              <p>Kaibigang Pilipino gets involved in the creation of UCSD's Cross-Cultural Center, becoming an affiliated organization.</p>
+            </div>
+          </div>
+        </li>
+       <li class="timeline-inverted">
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>1998</b></font></h4>
+            </div>
+            <div class="timeline-body">
+              <p>The Kuya/Ate/Ading component is conceived and the first Pilipino History and Arts Celebration (now known as Magkasama) is held.</p>
+            </div>
+          </div>
+        </li>
+         <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>1999</b></font></h4>
+             
+            </div>
+            <div class="timeline-body">
+              <p> First Pilipino Awareness Day (now known as Pilipin@ Awareness Week) is held.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>2002</b></font></h4>
+            </div>
+            <div class="timeline-body">
+              <p>Filipino Collegiate Collaborative is established between the Pilipin@-American student organizations of UCSD, SDSU, USD, CSUSM, Miramar, and Southwestern in an effort to save Tagalog classes from being cut.</p>
+            </div>
+          </div>
+        </li>
+         <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>2005</b></font></h4>
+             
+            </div>
+            <div class="timeline-body">
+              <p>Kaibigang Pilipino's Student Teaching Academic Retention (KP STAR) is institutionalized as the organization's retention project after the creation of the Peer Counseling component.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>2006</b></font></h4>
+            </div>
+            <div class="timeline-body">
+              <p>The first KP STAR Retreat is held.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>2007</b></font></h4>
+             
+            </div>
+            <div class="timeline-body">
+              <p>Kaibigang Pilipino's Community Outreach to Realize Empowerment (KP CORE) is institutionalized as the organization's outreach project after the launch of the Student Promoted Access Center for Education and Service (SPACES) from the passing of the campus-wide "Promoting Understanding and Learning through Service and Education (PULSE) Referendum. KP also joins Kamalayan Kollective and KaBayanihan (and now Pilipino Undergraduate Society for Health) in establishing Kapwa Tao. The 20th Anniversary Ourstory Gala is held.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>2010</b></font></h4>
+            </div>
+            <div class="timeline-body">
+              <p>A malicious fraternity party, the Compton Cookout, targets underprivileged, underrepresented, and underserved communities in UCSD, eliciting campus-wide protests and campus diversity policy reform. KP CORE gains access to work with Samuel F.B. Morse High School students and administration. The first Kapwa Tao Kumustahan Oryenstasyon is held.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>2011</b></font></h4>
+             
+            </div>
+            <div class="timeline-body">
+              <p>The first Filipino Collegiate Collaborative College to Career Conference is held.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><font color="FFA500"><b>2012</b></font></h4>
+            </div>
+            <div class="timeline-body">
+              <p>Kaibigang Pilipino changes its name to Kaibigang Pilipin@ to recognize Pinays in the space. The 25th Anniversary Ourstory Gala is held.</p>
+            </div>
+          </div>
+        </li>
+        
+    </ul>
+</div>
+ <!-- End timeline  -->
 
 
- <div class="mu-about-us-right" style="padding-left: 70px; padding-right: 60px; padding-top: 25px; background-color: #222;">
+ <!--
+
+ <div class="mu-about-us-right" style="padding-left: 70px; padding-right: 60px; padding-top: 25px; ">
               <ul>
-                    <font color="white"><li><b><font color="FFA500">1987:</font></b>Kaibigang Pilipino (now known as Kaibigang Pilipin@) is registered as a student organization.</li>
+                  <li><b><font color="FFA500">1987:</font></b>Kaibigang Pilipino (now known as Kaibigang Pilipin@) is registered as a student organization.</li>
                     <li><b><font color="FFA500">1992:</font></b> First High School Conference, Pilipino Cultural Night (now known as Pilipin@ Cultural Celebration), and Pilipino Graduation, are held. </li>
                     <li><b><font color="FFA500">1995:</font></b> Kaibigang Pilipino gets involved in the creation of UCSD's Cross-Cultural Center, becoming an affiliated organization.</li>
                     <li><b><font color="FFA500">1998:</font></b> The Kuya/Ate/Ading component is conceived and the first Pilipino History and Arts Celebration (now known as Magkasama) is held.</li>
@@ -201,9 +472,9 @@
                     <li><b><font color="FFA500">2007:</font></b> Kaibigang Pilipino's Community Outreach to Realize Empowerment (KP CORE) is institutionalized as the organization's outreach project after the launch of the Student Promoted Access Center for Education and Service (SPACES) from the passing of the campus-wide "Promoting Understanding and Learning through Service and Education (PULSE) Referendum. KP also joins Kamalayan Kollective and KaBayanihan (and now Pilipino Undergraduate Society for Health) in establishing Kapwa Tao. The 20th Anniversary Ourstory Gala is held.</li>
                     <li><b><font color="FFA500">2010:</font></b> A malicious fraternity party, the Compton Cookout, targets underprivileged, underrepresented, and underserved communities in UCSD, eliciting campus-wide protests and campus diversity policy reform. KP CORE gains access to work with Samuel F.B. Morse High School students and administration. The first Kapwa Tao Kumustahan Oryenstasyon is held..</li>
                     <li><b><font color="FFA500">2011:</font></b> The first Filipino Collegiate Collaborative College to Career Conference is held.</li>
-                    <li><b><font color="FFA500">2012:</font></b> Kaibigang Pilipino changes its name to Kaibigang Pilipin@ to recognize Pinays in the space. The 25th Anniversary Ourstory Gala is held.</li> </font>
+                    <li><b><font color="FFA500">2012:</font></b> Kaibigang Pilipino changes its name to Kaibigang Pilipin@ to recognize Pinays in the space. The 25th Anniversary Ourstory Gala is held.</li> 
                 
-                  </ul></div> 
+                  </ul></div> -->
 
   <!-- Start Footer -->
   <footer id="mu-footer">
