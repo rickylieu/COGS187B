@@ -52,7 +52,153 @@
     transform: translate(-50%, -50%);
     white-space:nowrap;
 }
+
+/*cards*/
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 25px 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+}
+
+.card .card-height-indicator {
+    margin-top: 100%;
+}
+
+.card.row-space .header {
+    padding: 15px 20px 0;
+}
+
+.card .title {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card .card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.card .card-image .card-title {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-size: 1.3em;
+    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+}
+
+.card .category:not([class*="text-"]) {
+    color: #999999;
+}
+
+.card .card-content {
+    padding: 15px 20px;
+}
+
+.card .card-content .category {
+    margin-bottom: 0;
+}
+
+.card .card-header {
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    margin: -20px 15px 0;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: #999999;
+}
+
+.card .card-header .title {
+    color: #FFFFFF;
+}
+
+.card .card-header .category {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.card .card-header.card-chart {
+    padding: 0;
+    min-height: 160px;
+}
+
+.card .card-header.card-chart+.content h4 {
+    margin-top: 0;
+}
+
+.card .card-header .ct-label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.card .card-header .ct-grid {
+    stroke: rgba(255, 255, 255, 0.2);
+}
+
+.card .card-header .ct-series-a .ct-point,
+.card .card-header .ct-series-a .ct-line,
+.card .card-header .ct-series-a .ct-bar,
+.card .card-header .ct-series-a .ct-slice-donut {
+    stroke: rgba(255, 255, 255, 0.8);
+}
+
+.card .card-header .ct-series-a .ct-slice-pie,
+.card .card-header .ct-series-a .ct-area {
+    fill: rgba(255, 255, 255, 0.4);
+}
+
+.card .chart-title {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  background-image: url("assets/img/headers/STAR/ourstory.png");
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content1 {
+  padding: 30px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 </style>
+
 
   </head>
   <body>
@@ -173,29 +319,91 @@
   <!--
 <section style="background-color: #222; color: white"> -->
 
+
+
 <section>
   
     <div class="mu-about-us-right" style="padding-top: 20px;">
-     <div style= "padding-left: 55px; padding-right: 55px;  text-align: justify; text-align: left; line-height: 2;">
-                 Kaibigang Pilipin@'s <b><font color="FFA500">Student Teaching Academic and Retention (KP STAR)</font></b> is a student-initiated and student-run program designed to promote the retention and increase graduation rates of Pilipin@s and Filipin@-Americans at UCSD to advance the hope of achieving diversity at institutions of higher education. Through its three distinct yet cohesive components, we cultivate and strengthen a unified, supportive community, challenging each other to realize personal and academic success. KP STAR values the retention and matriculation of all underrepresented and underserved students based on the needs of the Pilipin@ undergraduate population.</div></div>
+    
+
+                       <div class="col-md-12">
+                            <div class="card">
+
+                               
+                                <div class="card-content">
+                                    <h4 class="title"></h4>
+                                    <p class="category"><font color="black"><b>
+                                         The Student Teaching Academic and Retention (KP STAR) is a student-initiated and student-run program designed to promote the retention and increase graduation rates of Pilipin@s and Filipin@-Americans at UCSD to advance the hope of achieving diversity at institutions of higher education through the following three components. </font></b></p>
+                                </div>
+                              </div>
+                            </div>
+
+                      
+
+                              <div class="col-md-4">
+                            <div class="card">
+                            
+                                <div class="card-header card-chart" data-background-color="green"><img src="assets/img/starcomp2.jpg" alt="img">
+                                    <div class="ct-chart" id="dailySalesChart"></div>
+                                </div>
+                                <div class="card-content">
+                                    <h4 class="title">Peer Counseling Component</h4>
+                                    <p class="category">
+                                        Peer counselors are trained to facilitate dialogues and workshops relating to issues of identity, oppression, etc. Through the program, students can meet with a peer counselor who may provide them with emotional support and direct them to valuable resources for their personal and academic endeavors.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-4">
+                            <div class="card">
+
+                                <div class="card-header card-chart" data-background-color="green"><img src="assets/img/starcomp1.jpg" alt="img">
+                                    <div class="ct-chart" id="dailySalesChart"></div>
+                                </div>
+                                <div class="card-content">
+                                    <h4 class="title">Kuya/Ate/Ading Component</h4>
+                                    <p class="category">
+                                         This component provides mentors that facilitate and build positive and supportive relationships with incoming students. Through this one-to-one relationship, a sense of community forms and helps students with the transitions in college. An application link will be updated here at the beginning of each Fall and Winter quarter.</p>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="col-md-4">
+                            <div class="card">
+                            
+                                <div class="card-header card-chart" data-background-color="green"><img src="assets/img/starcomp3.jpg" alt="img">
+                                    <div class="ct-chart" id="dailySalesChart"></div>
+                                </div>
+                                <div class="card-content">
+                                    <h4 class="title">Academic Component</h4>
+                                    <p class="category">
+                                        This component provides workshops and peer study groups that facilitates students’ academic transition. Workshops focus on study skills, time management, academic career planning, matriculation to graduate school, academic resources, career planning and post-grad transition. </p>
+                                </div>
+                              </div>
+                            </div>
+                         
                 
 
 </section>
 
-<section>
-    <img src="assets/img/headers/STAR/component.png" alt="img" style="padding-top: 50px;">
-</section>
 
-              <div class="mu-about-us-right" style="padding-top: 20px;">
-              <ul>
-                    <li><b><font color="FFA500">Kuya/Ate/Ading:</font></b> The Kuya/Ate/Ading component provides mentors that facilitates and builds one-to-one relationships with incoming freshpeople. Mentors act as role models and positive influences in the social transition of their mentees. The component aims to create a sense of community and long-lasting supportive relationships between mentors and mentees.</li>
-                    <li><b><font color="FFA500">Peer Counseling:</font></b> The Peer Counseling component serves as a resource that facilitates students’ academic, social and personal transition. Through the program, students are able to meet with a peer counselor who may provide them with emotional support and direct them to valuable resources that may aid them in their personal growth, academic transition, community involvement and leadership development. Peer counselors are also trained to facilitate dialogues, general body meetings and workshops relating to issues of identity, oppression, etc.</li>
-                    <li><b><font color="FFA500">Academic:</font></b> The Academic component provides workshops and peer study groups that facilitates students’ academic transition. Workshops will focus on study skills, time management, academic career planning, matriculation to graduate school, academic resources, career planning and post-grad transition. Peer study groups bring together students either in the same field, major or classes to discuss and study current class material.</li>
-                  </ul></div> 
+<!--outstory -->
+<div class="col-md-12" style="padding-bottom: 50px;">
+<button class="collapsible"><center><h2>Ourstory</h2> Read more about the history of this program <i class="fa fa-sort-desc fa-2x" aria-hidden="true"></i></center> </button>
+<div class="content1">
+                  <p>Although UCSD prides itself based on its demographic numbers, the Filipino population at UCSD is a mere 5%. Seeing as how Filipinos generate the KP STAR target population, it is important that retention efforts are successful in order to retain the 5% of Filipinos at UCSD, avoiding loss of students through discomfort, disillusion and dropout rates. In addition, because 30% of students are first generation college students and 36% of students report that English is not their home language, such facts may become barriers for students, putting them at an educational disadvantage. Therefore, programs aimed specifically at the Filipino demographic are essential to maintain and hopefully increase the number of Filipinos on this campus.</p>
 
-<section>
-    <img src="assets/img/headers/STAR/ourstory.png" alt="img" vspace="50">
-</section>
+                 <p>
+                  In 2001, a group of KP members made a trip to UCLA to find out about their Pilipin@ retention program, Samahang Pilipino Education and Academic Retention (SPEAR). Under the direction of Rene Gube (Vice-Chair Internal) and April Limcolioc (Freshperson Executive), KP decided to start its own retention component called STAR.</p>
+
+                  <p>However, the program hardly took off. The leadership had problems establishing STAR as a program and eventually no one else took the initiative to continue the initial vision. However, in the 2005-2006 academic school year, David Reyes (Vice-Chair Internal), Sheryl Diaz (Vice-Chair External), and Christy Nierva (Staff Adviser) officially established KP STAR as a part of KP. With the formation of the Peer Counseling component, in conjunction with the addition of the Kuya/Ate/Ading and Tutoring components that had been present within KP since 1998, KP STAR was institutionalized.</p>
+</div></div>
+
+
+
+<!--
+    <div class="col-md-12">
+     <img src="assets/img/headers/STAR/ourstory.png" alt="img" vspace="50"></div>
+
 
  <div style= "padding-left: 70px; padding-right: 70px;  text-align: left; line-height: 2; ">
                  <p>Although UCSD prides itself based on its demographic numbers, the Filipino population at UCSD is a mere 5%. Seeing as how Filipinos generate the KP STAR target population, it is important that retention efforts are successful in order to retain the 5% of Filipinos at UCSD, avoiding loss of students through discomfort, disillusion and dropout rates. In addition, because 30% of students are first generation college students and 36% of students report that English is not their home language, such facts may become barriers for students, putting them at an educational disadvantage. Therefore, programs aimed specifically at the Filipino demographic are essential to maintain and hopefully increase the number of Filipinos on this campus.</p>
@@ -203,20 +411,10 @@
                  <p>
                   In 2001, a group of KP members made a trip to UCLA to find out about their Pilipin@ retention program, Samahang Pilipino Education and Academic Retention (SPEAR). Under the direction of Rene Gube (Vice-Chair Internal) and April Limcolioc (Freshperson Executive), KP decided to start its own retention component called STAR.</p>
 
-                  <p>However, the program hardly took off. The leadership had problems establishing STAR as a program and eventually no one else took the initiative to continue the initial vision. However, in the 2005-2006 academic school year, David Reyes (Vice-Chair Internal), Sheryl Diaz (Vice-Chair External), and Christy Nierva (Staff Adviser) officially established KP STAR as a part of KP. With the formation of the Peer Counseling component, in conjunction with the addition of the Kuya/Ate/Ading and Tutoring components that had been present within KP since 1998, KP STAR was institutionalized.</p>
+                  <p>However, the program hardly took off. The leadership had problems establishing STAR as a program and eventually no one else took the initiative to continue the initial vision. In the 2005-2006 academic school year, however, David Reyes (Vice-Chair Internal), Sheryl Diaz (Vice-Chair External), and Christy Nierva (Staff Adviser) officially established KP STAR as a part of KP. With the formation of the Peer Counseling component, in conjunction with the addition of the Kuya/Ate/Ading and Tutoring components that had been present within KP since 1998, KP STAR was institutionalized.</p>
                </div>
+-->
 
-<section>
-    <img src="assets/img/headers/STAR/how.png" alt="img" style="padding-top: 50px;">
-
-
-   <div style= "padding-top: 20px; padding-bottom: 10px;">
-  
-    <center style="padding-left: 70px; padding-right: 70px; padding-top: 10px;">Check back at the beginning of Fall and Winter quarter for more information!</center>
-    
-</div>
-
-  </section>
 
 </section>
  <!-- Start Footer -->
@@ -260,6 +458,23 @@
  
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
   </body>
 </html>
