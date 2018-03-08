@@ -35,6 +35,14 @@ body {
   line-height: 24px;
 }
 
+.centered {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space:nowrap;
+}
+
 .no-padding {
   padding: 0;
 }
