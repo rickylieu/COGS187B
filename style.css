@@ -21,7 +21,7 @@
 #TESTIMONIAL SECTION
 #CHEF SECTION
 #CONTACT SECTION
-#MAP SECTION 
+#MAP SECTION
 #FOOTER SECTION
 #RESPONSIVE DESIGN
 */
@@ -37,10 +37,17 @@ body {
 
 .centered {
     position: absolute;
-    top: 200px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    white-space:nowrap;
+
+    color:#fff;
+    font-weight: 400;
+    z-index:99;
+}
+
+.centered h1 {
+  font-size: 70px;
 }
 
 .no-padding {
@@ -65,11 +72,11 @@ a:focus {
   text-decoration: none;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   font-family: "Open Sans", sans-serif;
 }
@@ -114,12 +121,12 @@ img {
   transition: all 0.2s;
 }
 
-.mu-readmore-btn:hover, 
+.mu-readmore-btn:hover,
 .mu-readmore-btn:focus {
   color: #fff;
 }
 
-.mu-readmore-btn:hover::after, 
+.mu-readmore-btn:hover::after,
 .mu-readmore-btn:focus::after {
   bottom: 0px;
   content: "";
@@ -143,7 +150,7 @@ img {
   transition: all 0.5s;
 }
 
-.mu-browsmore-btn:hover, 
+.mu-browsmore-btn:hover,
 .mu-browsmore-btn:focus {
   color: #fff;
 }
@@ -161,7 +168,7 @@ img {
   transition: all 0.5s;
 }
 
-.mu-send-btn:hover, 
+.mu-send-btn:hover,
 .mu-send-btn:focus {
   color: #fff;
 }
@@ -179,7 +186,7 @@ img {
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 999; 
+  z-index: 999;
 }
 
 
@@ -223,7 +230,7 @@ img {
   color: #333;
   display: inline-block;
   font-weight: 700;
-  font-size: 20px;  
+  font-size: 20px;
   padding: 15px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -240,8 +247,8 @@ img {
 }
 
 
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
 }
@@ -375,6 +382,7 @@ img {
   display: inline;
   float: left;
   position: relative;
+  text-align:center;
   width: 100%;
 }
 
@@ -395,9 +403,7 @@ img {
 
 .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
   position: absolute;
-  left: 15%;
-  top: 30%;
-  right: 15%;
+  top: 50%;
   text-align: center;
   z-index: 99;
 }
@@ -413,6 +419,7 @@ img {
   color: #fff;
   font-size: 70px;
   line-height: 90px;
+
 }
 
 .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
@@ -452,14 +459,14 @@ img {
   color: #888;
 }
 
-.mu-top-slider .slick-prev:hover, 
+.mu-top-slider .slick-prev:hover,
 .mu-top-slider .slick-prev:focus,
 .mu-top-slider .slick-next:hover,
 .mu-top-slider .slick-next:focus {
   color: #fff;
 }
 
-.mu-top-slider .slick-prev:hover::before, 
+.mu-top-slider .slick-prev:hover::before,
 .mu-top-slider .slick-prev:focus::before,
 .mu-top-slider .slick-next:hover::before,
 .mu-top-slider .slick-next:focus::before {
@@ -523,7 +530,7 @@ img {
 }
 
 .mu-about-us-right ul {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   padding-left: 25px;
 }
 
@@ -559,7 +566,7 @@ img {
   display: inline;
   width: 100%;
   text-align: center;
-  
+
 }
 
 .mu-title .mu-subtitle {
@@ -957,18 +964,18 @@ RESERVATION SECTION
   padding: 6px 10px;
 }
 
-.datepicker .datepicker-switch, 
-.datepicker .prev, 
-.datepicker .next, 
+.datepicker .datepicker-switch,
+.datepicker .prev,
+.datepicker .next,
 .datepicker tfoot tr th {
   font-size: 20px;
 }
 
-.table-condensed > thead > tr > th, 
-.table-condensed > tbody > tr > th, 
-.table-condensed > tfoot > tr > th, 
-.table-condensed > thead > tr > td, 
-.table-condensed > tbody > tr > td, 
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
 .table-condensed > tfoot > tr > td {
   padding: 6px;
 }
@@ -1088,7 +1095,7 @@ RESERVATION SECTION
 }
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img img {
-  
+
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   -ms-transition: all 0.8s;
@@ -1369,7 +1376,7 @@ RESERVATION SECTION
   transition: all 0.5s;
 }
 
-.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:hover, 
+.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:hover,
 .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:focus {
   color: #fff;
 }
@@ -1657,7 +1664,7 @@ RESERVATION SECTION
   padding-top: 26%;
   }
 
-  
+
 }
 
 
@@ -1678,11 +1685,11 @@ RESERVATION SECTION
   .mu-reservation-form {
     text-align: center;
   }
-  
+
   .mu-reservation-right {
     margin-top: 60px;
   }
-  
+
   #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
     margin-top: 50px;
     padding: 0;
@@ -1710,7 +1717,7 @@ RESERVATION SECTION
     border-radius: 0px;
   }
 
-  .navbar-default .navbar-toggle:hover, 
+  .navbar-default .navbar-toggle:hover,
   .navbar-default .navbar-toggle:focus {
     background-color: #fff;
   }
@@ -1720,7 +1727,7 @@ RESERVATION SECTION
     text-align: center;
   }
 
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     background-color: #fff;
   }
@@ -1730,13 +1737,13 @@ RESERVATION SECTION
     margin-bottom: 10px;
     border-right: none;
   }
-   
+
 }
 
 
 @media (max-width: 640px) {
-  
-  .navbar-default .navbar-toggle:hover, 
+
+  .navbar-default .navbar-toggle:hover,
   .navbar-default .navbar-toggle:focus {
     background-color: #fff;
   }
@@ -1776,7 +1783,7 @@ RESERVATION SECTION
 
   .mu-top-slider .slick-dots {
     display: none !important;
-  } 
+  }
 
   .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-small-title {
     font-size: 45px;
@@ -1807,7 +1814,7 @@ RESERVATION SECTION
   .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
     display: none;
   }
- 
+
   .mu-reservation-content p {
     padding: 0;
   }
@@ -1850,7 +1857,7 @@ RESERVATION SECTION
   #mu-pillars .mu-pillars-area .mu-pillars-content .mu-pillars li {
     margin-bottom: 10px;
   }
-  
+
 }
 
 @media (max-width: 360px) {
@@ -1894,7 +1901,7 @@ RESERVATION SECTION
     font-size: 16px;
     line-height: 24px;
   }
-  
+
   #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
     text-align: center;
   }
@@ -1952,7 +1959,7 @@ RESERVATION SECTION
     padding-top: 25.5%;
   }
 
-  
+
 }
 
 div.alumfigure img,
@@ -1964,7 +1971,7 @@ div.alumfigure div.alumcaption {
 div.alumfigure div {
     overflow: hidden;
 
-    
+
 }
 
 
@@ -2361,4 +2368,3 @@ h5.events-text {
   .timeline-body > p + p {
     margin-top: 5px;
   }
-
