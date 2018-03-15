@@ -387,7 +387,7 @@ img {
 }
 
 .mu-top-slider .mu-top-slider-single:after {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   bottom: 0;
   content: "";
   left: 0;
@@ -419,7 +419,6 @@ img {
   color: #fff;
   font-size: 70px;
   line-height: 90px;
-
 }
 
 .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
@@ -709,6 +708,7 @@ img {
 .mu-pillars li a {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  border-style:groove;
   border-radius: 0;
   color: #000;
   font-size: 18px;
