@@ -156,7 +156,8 @@ img {
 }
 
 .mu-send-btn {
-  background-color: transparent;
+  background-color: #FFA500;
+  color: white;
   border: 1px solid #ccc;
   display: inline-block;
   font-size: 15px;
@@ -170,7 +171,9 @@ img {
 
 .mu-send-btn:hover,
 .mu-send-btn:focus {
-  color: #fff;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #ccc;
 }
 
 
@@ -519,6 +522,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .mu-about-us-right {
@@ -603,7 +607,7 @@ img {
 .mu-counter-overlay {
   background-color: rgba(255, 255, 255, 0.87);
   display: inline;
-  padding: 100px 0;
+  padding: 50px 0;
   float: left;
   width: 100%;
 }
@@ -631,7 +635,7 @@ img {
   color: #fff;
   display: inline;
   float: left;
-  padding: 25px 0;
+  padding: 50px 0;
   text-align: center;
   width: 100%;
 }
@@ -665,7 +669,7 @@ img {
 .mu-counter-nav li .mu-single-counter p {
   font-size: 18px;
   letter-spacing: 1.5px;
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
 /*==================
@@ -1412,7 +1416,7 @@ RESERVATION SECTION
   background-color: #f8f8f8;
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 50px 0;
   width: 100%;
 }
 
