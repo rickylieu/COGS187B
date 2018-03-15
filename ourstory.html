@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ourstory</title>
 
     <!-- Favicon -->
@@ -12,30 +12,30 @@
     <!-- Font awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Slick slider -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">    
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <!-- Date Picker -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">   
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">
      <!-- Gallery Lightbox -->
-    <link href="assets/css/magnific-popup.css" rel="stylesheet"> 
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">     
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- Main style sheet -->
-    <link href="style.css" rel="stylesheet">    
+    <link href="style.css" rel="stylesheet">
 
-   
+
     <!-- Google Fonts -->
 
     <!-- Prata for body  -->
     <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
     <!-- Tangerine for small title -->
-    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>   
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
     <!-- Open Sans for title -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    
-    
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,146 +44,82 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 <style>
- 
 
-  /*timeline*/
+/*background for timeline*/
+.mu-counter-overlay {
+  background-color: rgba(255, 255, 255, .7);
+  display: inline;
+  padding: 1px 0;
+  float: left;
+  width: 100%;
+}
 
-  .timeline {
-    list-style: none;
-    padding: 20px 0 50px;
-    position: relative;
+#mu-counter1 {
+  background-attachment: fixed;
+  background-image: url("assets/img/ourstory/t1.jpg");
+  background-size: cover;
+  display: inline;
+  float: left;
+  width: 100%;
+}
 
-  }
-  .timeline:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 3px;
-    background-color: #eeeeee;
-    left: 50%;
-    margin-left: -1.5px;
-  }
-  .timeline > li {
-    margin-bottom: 20px;
-    position: relative;
-  }
-  .timeline > li:before,
-  .timeline > li:after {
-    content: " ";
-    display: table;
-  }
-  .timeline > li:after {
-    clear: both;
-  }
-  .timeline > li:before,
-  .timeline > li:after {
-    content: " ";
-    display: table;
-  }
-  .timeline > li:after {
-    clear: both;
-  }
-  .timeline > li > .timeline-panel {
-    width: 48%;
-    float: left;
-    border: 1px solid #d4d4d4;
-    border-radius: 2px;
-    padding: 10px;
-    position: relative;
-    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  }
-  .timeline > li > .timeline-panel:before {
-    position: absolute;
-    top: 26px;
-    right: -15px;
-    display: inline-block;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
-    border-bottom: 15px solid transparent;
-    content: " ";
-  }
-  .timeline > li > .timeline-panel:after {
-    position: absolute;
-    top: 27px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
-    border-bottom: 14px solid transparent;
-    content: " ";
-  }
-  .timeline > li > .timeline-badge {
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    line-height: 50px;
-    font-size: 1.4em;
-    text-align: center;
-    position: absolute;
-    top: 31px;
-    left: 50%;
-    margin-left: -9px;
-    background-color: #999999;
-    z-index: 100;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-  }
-  .timeline-badge.primary {
-    background-color: #2e6da4 !important;
-  }
-  .timeline-badge.success {
-    background-color: #3f903f !important;
-  }
-  .timeline-badge.warning {
-    background-color: #f0ad4e !important;
-  }
-  .timeline-badge.danger {
-    background-color: #d9534f !important;
-  }
-  .timeline-badge.info {
-    background-color: #5bc0de !important;
-  }
-  .timeline-title {
-    margin-top: 0;
-    color: inherit;
-  }
-  .timeline-body > p,
-  .timeline-body > ul {
-    margin-bottom: 0;
-  }
-  .timeline-body > p + p {
-    margin-top: 5px;
-  }
+/*
+#mu-counter2 {
+  background-attachment: fixed;
+
+  background-size: cover;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-counter3 {
+  background-attachment: fixed;
+  background-image: url("assets/img/ourstory/t2.jpg");
+  background-size: cover;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-counter4 {
+  background-attachment: fixed;
+
+  background-size: cover;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-counter5 {
+  background-attachment: fixed;
+  background-image: url("assets/img/ourstory/t3.jpg");
+  background-size: cover;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-counter6 {
+  background-attachment: fixed;
+
+  background-size: cover;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+*/
+
 </style>
+
 
   </head>
   <body>
 
-  
+
     <!-- Start header section -->
-  <header id="mu-header">  
-    <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
+  <header id="mu-header">
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
@@ -194,31 +130,31 @@
             <span class="icon-bar"></span>
           </button>
 
-          <!-- LOGO -->       
+          <!-- LOGO -->
 
            <!--  Text based logo  -->
-          <a class="navbar-brand" href="index.html">KP</a>  
+          <a class="navbar-brand" href="index.html">KP</a>
 
            <!--  Image based logo  -->
 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <div id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-          
+
             <div class="dropdown">
-              <button class="dropbtn">ABOUT US 
+              <button class="dropbtn">ABOUT US
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
                 <a href="leadership.html">Leadership</a>
                 <a href="ourstory.html">Ourstory</a>
                 <a href="affiliates.html">Affiliates</a>
-              </div>  
-            </div>    
-          
+              </div>
+            </div>
+
 
             <a href="events.html">EVENTS</a>
-        
+
             <div class="dropdown">
               <button class="dropbtn">PROGRAMS
                 <i class="fa fa-caret-down"></i>
@@ -228,18 +164,18 @@
                 <a href="star.html">STAR</a>
               </div>
             </div>
-               
+
             <a href="alumni.html">ALUMNI</a>
-          </div>                            
-        </div><!--/.nav-collapse -->       
-      </div>          
-    </nav> 
+          </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
   </header>
   <!-- End header section -->
 
   <!-- Start slider  -->
   <section id="mu-slider">
-    <div class="mu-slider-area"> 
+    <div class="mu-slider-area">
 
       <!-- Top slider -->
       <div class="mu-top-slider">
@@ -247,39 +183,34 @@
         <!-- Top slider single slide -->
         <div class="mu-top-slider-single">
           <img src="assets/img/our1.jpg" alt="img">
-          <!-- Top slider content -->
-          <div class="mu-top-slider-content">
-          <div class="centered"><h2 class="mu-slider-title" style="">Ourstory</h2></div>
-            <p></p>           
-          </div>
-          <!-- / Top slider content -->
+
+         <div class="centered">
+           <h1 class="mu-slider-title">Ourstory</h1>
+         </div>
         </div>
-        <!-- / Top slider single slide -->    
+        <!-- / Top slider single slide -->
 
         <!-- Top slider single slide -->
         <div class="mu-top-slider-single">
           <img src="assets/img/our2.jpg" alt="img">
           <!-- Top slider content -->
-          <div class="mu-top-slider-content">
-         
-            <div class="centered"><h2 class="mu-slider-title" style="">Ourstory</h2></div>
-            <p></p>           
-          </div>
-          <!-- / Top slider content -->
+
+         <div class="centered">
+           <h1 class="mu-slider-title">Ourstory</h1>
+         </div>          
         </div>
-        <!-- / Top slider single slide --> 
+        <!-- / Top slider single slide -->
 
         <!-- Top slider single slide -->
         <div class="mu-top-slider-single">
           <img src="assets/img/our3.jpg" alt="img">
-          <!-- Top slider content -->
-          <div class="mu-top-slider-content">
-            
-         <div class="centered"><h2 class="mu-slider-title" style="">Ourstory</h2></div>
-          </div>
-          <!-- / Top slider content -->
+
+         <div class="centered">
+           <h1 class="mu-slider-title">Ourstory</h1>
+         </div>
+
         </div>
-        <!-- / Top slider single slide -->   
+        <!-- / Top slider single slide -->
 
       </div>
     </div>
@@ -288,24 +219,32 @@
 
 
 
+
+
  <!-- start timeline  -->
+
 <div class="container">
     <div class="page-header" style="padding-top: 30px">
         <h1 id="timeline" style="color: white;"><center>-</center></h1>
     </div>
+
+
+
+
     <ul class="timeline">
         <li>
           <div class="timeline-badge"></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title"><font color="FFA500"><b>1987</b></font></h4>
-             
+
             </div>
             <div class="timeline-body">
               <p>Kaibigang Pilipino (now Kaibigang Pilipin@) is registered as a student organization.</p>
             </div>
           </div>
         </li>
+
         <li class="timeline-inverted">
           <div class="timeline-badge warning"></div>
           <div class="timeline-panel">
@@ -317,6 +256,10 @@
             </div>
           </div>
         </li>
+
+
+
+
         <li>
           <div class="timeline-badge"></div>
           <div class="timeline-panel">
@@ -339,12 +282,14 @@
             </div>
           </div>
         </li>
+
+
          <li>
           <div class="timeline-badge"></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title"><font color="FFA500"><b>1999</b></font></h4>
-             
+
             </div>
             <div class="timeline-body">
               <p> First Pilipino Awareness Day (now Pilipin@ Awareness Week) is held.</p>
@@ -362,12 +307,17 @@
             </div>
           </div>
         </li>
+
+
+
+
+
          <li>
           <div class="timeline-badge"></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title"><font color="FFA500"><b>2005</b></font></h4>
-             
+
             </div>
             <div class="timeline-body">
               <p>Student Teaching Academic Retention (STAR) is institutionalized as the organization's retention project after the creation of the Peer Counseling component.</p>
@@ -385,15 +335,17 @@
             </div>
           </div>
         </li>
+
+
         <li>
           <div class="timeline-badge"></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title"><font color="FFA500"><b>2007</b></font></h4>
-             
+
             </div>
             <div class="timeline-body">
-              <p>Community Outreach to Realize Empowerment (CORE) is institutionalized as the organization's outreach project after the launch of the Student Promoted Access Center for Education and Service (SPACES) from the passing of the campus-wide "Promoting Understanding and Learning through Service and Education (PULSE) Referendum. KP helps in establishing Kapwa Tao. The 20th Anniversary Ourstory Gala is held.</p>
+              <p>CORE becomes the organization's outreach project after the launch of the SPACES. KP helps in establishing Kapwa Tao. The 20th Anniversary Ourstory Gala is held.</p>
             </div>
           </div>
         </li>
@@ -404,23 +356,24 @@
               <h4 class="timeline-title"><font color="FFA500"><b>2010</b></font></h4>
             </div>
             <div class="timeline-body">
-              <p>KP CORE gains access to work with Samuel F.B. Morse High School students and administration. The first Kapwa Tao Kumustahan Oryenstasyon is held.</p>
+              <p>KP CORE gains access to work with Samuel F.B. Morse High School. The first Kapwa Tao Kumustahan Oryenstasyon is held.</p>
             </div>
           </div>
         </li>
+
         <li>
           <div class="timeline-badge"></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title"><font color="FFA500"><b>2011</b></font></h4>
-             
+
             </div>
             <div class="timeline-body">
               <p>The first Filipino Collegiate Collaborative College to Career Conference is held.</p>
             </div>
           </div>
         </li>
-        <li class="timeline-inverted">
+        <li class="timeline-inverted" >
           <div class="timeline-badge warning"></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
@@ -428,23 +381,20 @@
             </div>
             <div class="timeline-body">
               <p>KP changes its name to Kaibigang Pilipin@ to recognize Pinays in the space. The 25th Anniversary Ourstory Gala is held.
+              <img src="assets/img/star.jpg">
             </p>
             </div>
           </div>
         </li>
+      </ul>
+    </div>
+  </section>
 
-         <li class="timeline-body">
-          <div class="timeline-badge warning"></div>
-          <div class="timeline-panel">
-            
-            <div class="timeline-body">
-              <p> <img src="assets/img/os1.jpg" alt="img" ">
-            </p>
-            </div>
-          </div>
-        </li>
-        
-    </ul>
+
+
+
+
+
 </div>
  <!-- End timeline  -->
 
@@ -466,8 +416,8 @@
                     <li><b><font color="FFA500">2007:</font></b> Kaibigang Pilipino's Community Outreach to Realize Empowerment (KP CORE) is institutionalized as the organization's outreach project after the launch of the Student Promoted Access Center for Education and Service (SPACES) from the passing of the campus-wide "Promoting Understanding and Learning through Service and Education (PULSE) Referendum. KP also joins Kamalayan Kollective and KaBayanihan (and now Pilipino Undergraduate Society for Health) in establishing Kapwa Tao. The 20th Anniversary Ourstory Gala is held.</li>
                     <li><b><font color="FFA500">2010:</font></b> A malicious fraternity party, the Compton Cookout, targets underprivileged, underrepresented, and underserved communities in UCSD, eliciting campus-wide protests and campus diversity policy reform. KP CORE gains access to work with Samuel F.B. Morse High School students and administration. The first Kapwa Tao Kumustahan Oryenstasyon is held..</li>
                     <li><b><font color="FFA500">2011:</font></b> The first Filipino Collegiate Collaborative College to Career Conference is held.</li>
-                    <li><b><font color="FFA500">2012:</font></b> Kaibigang Pilipino changes its name to Kaibigang Pilipin@ to recognize Pinays in the space. The 25th Anniversary Ourstory Gala is held.</li> 
-                
+                    <li><b><font color="FFA500">2012:</font></b> Kaibigang Pilipino changes its name to Kaibigang Pilipin@ to recognize Pinays in the space. The 25th Anniversary Ourstory Gala is held.</li>
+
                   </ul></div> -->
 
   <!-- Start Footer -->
@@ -485,7 +435,7 @@
           </div>
           <div class="mu-footer-copyright">
             <p>&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
-          </div>         
+          </div>
         </div>
       </div>
       </div>
@@ -493,11 +443,11 @@
   </footer>
   <!-- End Footer -->
  <!-- End Footer -->
-  
+
   <!-- jQuery library -->
-  <script src="assets/js/jquery.min.js"></script>  
+  <script src="assets/js/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="assets/js/bootstrap.js"></script>   
+  <script src="assets/js/bootstrap.js"></script>
   <!-- Slick slider -->
   <script type="text/javascript" src="assets/js/slick.js"></script>
   <!-- Counter -->
@@ -505,12 +455,12 @@
   <!-- Gallery Lightbox -->
   <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
   <!-- Date Picker -->
-  <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script> 
+  <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
   <!-- Ajax contact form  -->
   <script type="text/javascript" src="assets/js/app.js"></script>
- 
+
   <!-- Custom js -->
-  <script src="assets/js/custom.js"></script> 
+  <script src="assets/js/custom.js"></script>
 
   </body>
 </html>
