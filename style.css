@@ -2257,7 +2257,7 @@ h5.events-text {
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #eeeeee;
+    background-color: #fff;
     left: 50%;
     margin-left: -1.5px;
   }
@@ -2324,7 +2324,7 @@ h5.events-text {
     position: absolute;
     top: 31px;
     left: 50%;
-    margin-left: -9px;
+    margin-left: -10px;
     background-color: #999999;
     z-index: 100;
     border-top-right-radius: 50%;
@@ -2354,7 +2354,7 @@ h5.events-text {
     background-color: #3f903f !important;
   }
   .timeline-badge.warning {
-    background-color: #f0ad4e !important;
+    background-color: #FFA500 !important;
   }
   .timeline-badge.danger {
     background-color: #d9534f !important;
