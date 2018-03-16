@@ -2284,8 +2284,8 @@ h5.events-text {
     bottom: 0;
     position: absolute;
     content: " ";
-    width: 3px;
-    background-color: #eeeeee;
+    width: 4px;
+    background-color: #fff;
     left: 50%;
     margin-left: -1.5px;
   }
@@ -2310,9 +2310,9 @@ h5.events-text {
     clear: both;
   }
   .timeline > li > .timeline-panel {
-    width: 48%;
+    width: 47%;
     float: left;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #b2b2b2;
     border-radius: 2px;
     padding: 10px;
     position: relative;
@@ -2326,8 +2326,8 @@ h5.events-text {
     right: -15px;
     display: inline-block;
     border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
+    border-left: 15px solid #b2b2b2;
+    border-right: 0 solid #b2b2b2;
     border-bottom: 15px solid transparent;
     content: " ";
   }
@@ -2352,7 +2352,7 @@ h5.events-text {
     position: absolute;
     top: 31px;
     left: 50%;
-    margin-left: -9px;
+    margin-left: -10px;
     background-color: #999999;
     z-index: 100;
     border-top-right-radius: 50%;
@@ -2382,7 +2382,7 @@ h5.events-text {
     background-color: #3f903f !important;
   }
   .timeline-badge.warning {
-    background-color: #f0ad4e !important;
+    background-color: #FFA500 !important;
   }
   .timeline-badge.danger {
     background-color: #d9534f !important;
