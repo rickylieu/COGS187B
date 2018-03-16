@@ -2256,7 +2256,7 @@ h5.events-text {
     bottom: 0;
     position: absolute;
     content: " ";
-    width: 3px;
+    width: 4px;
     background-color: #fff;
     left: 50%;
     margin-left: -1.5px;
@@ -2282,9 +2282,9 @@ h5.events-text {
     clear: both;
   }
   .timeline > li > .timeline-panel {
-    width: 48%;
+    width: 47%;
     float: left;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #b2b2b2;
     border-radius: 2px;
     padding: 10px;
     position: relative;
@@ -2298,8 +2298,8 @@ h5.events-text {
     right: -15px;
     display: inline-block;
     border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
+    border-left: 15px solid #b2b2b2;
+    border-right: 0 solid #b2b2b2;
     border-bottom: 15px solid transparent;
     content: " ";
   }
