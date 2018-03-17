@@ -716,8 +716,8 @@ img {
 .mu-pillars li a {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  border-style:  hidden hidden groove hidden ;
-  border-color: hsla(0, 0%, 50%, 0.2);
+  border-style:  hidden hidden solid hidden ;
+  border-color: hsla(0, 0%, 0%, 0.2);
   border-radius: 0;
   color: #000;
   font-size: 18px;
