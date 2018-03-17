@@ -717,7 +717,7 @@ img {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   border-style:  hidden hidden groove hidden ;
-  border-color: hsla(0, 0%, 0%, 0.2);
+  border-color: hsla(0, 0%, 50%, 0.2);
   border-radius: 0;
   color: #000;
   font-size: 18px;
@@ -734,6 +734,10 @@ img {
 .mu-pillars .active a:hover,
 .mu-pillars .active a:focus {
   background-color: #FFF;
+  color: #ffa500;
+  border-width: 2px;
+  border-color: #ffa500;
+  border-style: hidden hidden solid hidden;
 }
 
 .mu-pillars .active a {
