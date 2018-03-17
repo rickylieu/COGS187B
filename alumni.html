@@ -28,6 +28,8 @@
 
     <!-- Google Fonts -->
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+
     <!-- Prata for body  -->
     <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
     <!-- Tangerine for small title -->
@@ -106,60 +108,46 @@
 
   <!-- Start header section -->
   <header id="mu-header">
-    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+     <nav class="navbar navbar-default probootstrap-navbar">
 
-          <!-- LOGO -->
-
-           <!--  Text based logo  -->
-          <a class="navbar-brand" href="index.html">KP</a>
-
-           <!--  Image based logo  -->
-
-
-
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <div id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-
-            <div class="dropdown">
-              <button class="dropbtn">ABOUT US
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="leadership.html">Leadership</a>
-                <a href="ourstory.html">Ourstory</a>
-                <a href="affiliates.html">Affiliates</a>
-              </div>
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
             </div>
-
-
-            <a href="events.html">EVENTS</a>
-
-            <div class="dropdown">
-              <button class="dropbtn">PROGRAMS
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="core.html">CORE</a>
-                <a href="star.html">STAR</a>
-              </div>
-            </div>
-
-            <a href="alumni.html">ALUMNI</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">KP</a>
           </div>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-  </header>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> About Us <i class="fa fa-caret-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="leadership.html">Leadership</a></li>
+                  <li><a href="ourstory.html">Ourstory</a></li>
+                  <li><a href="affiliates.html">Affiliates</a></li>
+                </ul>
+              </li>
+              <li><a href="events.html">Events</a></li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Programs <i class="fa fa-caret-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="core.html">Community Outreach (CORE)</a></li>
+                  <li><a href="star.html">Student Retention (STAR)</a></li>
+                </ul>
+              </li>
+              <li class="active"><a href="alumni.html">Alumni</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+    </header>
   <!-- End header section -->
  <!-- Start slider  -->
   <section id="mu-slider">
