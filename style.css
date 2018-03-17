@@ -2712,15 +2712,16 @@ h5.events-text {
   font-weight: 700;
   font-size: 35px;
   padding: 0;
-  margin: 40px 0 12px 0;
+  margin: 20px 0 12px 0;
 }
 
 .about-col p {
   font-size: 14px;
   line-height: 24px;
   color: #333;
-  margin-bottom: 0;
-  padding: 0 20px 20px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 0 10px 10px 10px;
 }
 
 
