@@ -58,61 +58,47 @@
 
 
   <!-- Start header section -->
-  <header id="mu-header">
-    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+   <header id="mu-header">
+     <nav class="navbar navbar-default probootstrap-navbar">
 
-          <!-- LOGO -->
-
-           <!--  Text based logo  -->
-          <a class="navbar-brand" href="index.html">KP</a>
-
-           <!--  Image based logo  -->
-
-
-
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <div id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-
-            <div class="dropdown">
-              <button class="dropbtn">ABOUT US
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="leadership.html">Leadership</a>
-                <a href="ourstory.html">Ourstory</a>
-                <a href="affiliates.html">Affiliates</a>
-              </div>
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
             </div>
-
-
-            <a href="events.html">EVENTS</a>
-
-            <div class="dropdown">
-              <button class="dropbtn">PROGRAMS
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="core.html">CORE</a>
-                <a href="star.html">STAR</a>
-              </div>
-            </div>
-
-            <a href="alumni.html">ALUMNI</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">KP</a>
           </div>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-  </header>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> About Us <i class="fa fa-caret-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="leadership.html">Leadership</a></li>
+                  <li><a href="ourstory.html">Ourstory</a></li>
+                  <li><a href="affiliates.html">Affiliates</a></li>
+                </ul>
+              </li>
+              <li><a href="events.html">Events</a></li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Programs <i class="fa fa-caret-down"></i> </a>
+                <ul class="dropdown-menu">
+                  <li><a href="core.html">Community Outreach (CORE)</a></li>
+                  <li><a href="star.html">Student Retention (STAR)</a></li>
+                </ul>
+              </li>
+              <li class="active"><a href="alumni.html">Alumni</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+    </header>
   <!-- End header section -->
 
 
@@ -346,7 +332,7 @@
                       <div class="mu-contact-widget">
                         <h3>General Body Meetings (GBM)</h3>
                         <address>
-                          <p><i class="fa fa-calendar"></i>Wednesdays of Quarter Odd Weeks</p>
+                          <p id="gbm-time"><i class="fa fa-calendar"></i>Wednesdays of Quarter Odd Weeks</p>
                           <p><i class="fa fa-hourglass"></i>6 p.m. to 8 p.m.</p>
                           <p><i class="fa fa-map-marker"></i>Cross-Cultural Center</p>
                         </address>
@@ -362,6 +348,77 @@
       </div>
     </section>
   <!-- End Contact -->
+
+<script>
+//First GBMs of each quarter (Winter, Spring, Fall)
+firstGBMs = ["January 10, 2018", "April 4, 2018", "October 3, 2018" ]
+
+var today = new Date();
+//msec = Date.parse("March 7, 2018")
+//var today = new Date(msec)
+console.log(today.getMonth())
+
+months = ['January','February','March','April','May','June','July','August','September','October','November','December'],
+days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var quarter = -1;
+
+//January - March
+if(today.getMonth() == 0 || today.getMonth() == 1 || today.getMonth() == 2) {
+  quarter = 0;
+}
+//April-June
+else if (today.getMonth() == 3 || today.getMonth() == 4 || today.getMonth() == 5) {
+  quarter = 1;
+}
+else if(today.getMonth() == 8 || today.getMonth() == 9 || today.getMonth() == 10 || today.getMonth() == 11) {
+  quarter = 2;
+}
+else {
+  quarter = -1
+}
+//quarter = -1;
+
+var week = 1;
+if(quarter != -1) {
+  msec = Date.parse(firstGBMs[quarter]);
+  var d = new Date(msec)
+  var gbmNumber = 1;
+  while(d.getTime() < today.getTime()) {
+    d.setDate(d.getDate() + 14);
+    console.log(d)
+  
+    //Only 5 GBMs per quarter, so if it's already past week 9 then show next quarter's first GBM
+    if(gbmNumber== 5) {
+      if(quarter == 0 || quarter == 1) {
+        msec = Date.parse(firstGBMs[quarter+1]);
+        d = new Date(msec)
+        week = 1;
+        break
+      }
+      else {
+        msec = Date.parse(firstGBMs[0]);
+        d = new Date(msec);
+        week = 1;
+        break;
+      }
+    }
+    gbmNumber++;
+    week+=2;
+  }
+}
+else {
+    msec = Date.parse(firstGBMs[2]);
+    var d = new Date(msec)
+    document.getElementById("gbm-time").innerHTML = "<i class='fa fa-calendar'></i>" + firstGBMs[2]
+}
+
+  minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+  hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+  ampm = d.getHours() >= 12 ? 'pm' : 'am',
+  /*document.getElementById("gbm-time").innerHTML = "<i class='fa fa-calendar'></i>" + days[d.getDay()]+' '+months[d.getMonth()]+' '+ d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;;*/
+  document.getElementById("gbm-time").innerHTML = "<i class='fa fa-calendar'></i>" + days[d.getDay()]+' '+months[d.getMonth()]+' '+ d.getDate()+', '+d.getFullYear()+' ' +
+  '(Week ' + week + ')'
+</script>
 
 
   <!-- FAQ Section Start -->
