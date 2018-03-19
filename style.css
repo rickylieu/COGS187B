@@ -528,6 +528,7 @@ img {
 .probootstrap-navbar .navbar-right .dropdown-menu {
   right: auto;
   margin-top: -20px;
+  margin-bottom: -20px;
 }
 
 .probootstrap-navbar .dropdown-menu {
@@ -572,14 +573,14 @@ img {
 
 @media screen and (max-width: 768px) {
   .probootstrap-navbar .navbar-brand {
-    top: 5px !important;
-    background-position: left 100%;
+  /*  top: 5px !important;
+    background-position: left 100%;*/
   }
 }
 
 @media screen and (max-width: 480px) {
   .probootstrap-navbar .navbar-brand {
-    top: 6px !important;
+    /*top: 6px !important;*/
   }
 }
 
@@ -1772,6 +1773,7 @@ RESERVATION SECTION
 .mu-chef-nav .slick-list li .mu-single-chef:hover .mu-single-chef-social {
   bottom: 0;
   opacity: 1;
+  color: black;
 }
 
 .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-img {
@@ -1832,6 +1834,7 @@ RESERVATION SECTION
 .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:hover,
 .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:focus {
   color: #fff;
+  opacity: 1;
 }
 
 .mu-chef-nav .slick-dots {
@@ -2859,3 +2862,8 @@ h5.events-text {
   .timeline-body > p + p {
     margin-top: 5px;
   }
+
+/*leadership*/
+.mu-single-chef:hover {
+  opacity: 0.5;
+}
