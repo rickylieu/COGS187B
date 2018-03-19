@@ -330,6 +330,10 @@ img {
   z-index: 1;
 }*/
 
+.timely-footer {
+  display: none;
+}
+
 .probootstrap-navbar {
   border: none;
   -webkit-box-shadow: none;
@@ -1518,15 +1522,15 @@ RESERVATION SECTION
   float: left;
   width: 100%;
   position: relative;
-  min-height: 390px;
-  max-height: 390px;
-  background-color: rgb(242, 244, 247);
-  border-bottom: 3px solid;
+  min-height: 250px;
+  max-height: 265px;
+  background-color: rgb(255, 165, 0);
+  /*border-bottom: 3px solid;
   border-top: 3px solid;
-  border-color: rgb(255, 165, 0);
+  border-color: rgb(255, 165, 0);*/
 }
 
-.mu-single-gallery .mu-single-gallery-item:hover .mu-single-gallery-info {
+/*.mu-single-gallery .mu-single-gallery-item:hover .mu-single-gallery-info {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
   min-height: 385px;
@@ -1534,7 +1538,7 @@ RESERVATION SECTION
   text-align: center;
   margin: auto;
   display: block;
-}
+}*/
 
 .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img {
   display: inline;
@@ -2465,7 +2469,7 @@ div.alumfigure div {
 h4.events-header {
   word-wrap: break-word;
   text-align: center;
-  color: rgb(255, 165, 0);
+  color: white;
 }
 
 h5.events-text {
