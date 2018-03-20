@@ -820,12 +820,12 @@ img {
 .mu-top-slider-single {
   display: inline;
   float: left;
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 
 .mu-top-slider .mu-top-slider-single:after {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   bottom: 0;
   content: "";
   left: 0;
