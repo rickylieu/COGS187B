@@ -841,10 +841,7 @@ img {
 }
 
 .mu-top-slider .mu-top-slider-single img {
-  width: auto;
-  height: auto;
-  max-width:1400px;
-  max-height:788px;
+  width:100%;
 }
 
 .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
