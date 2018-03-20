@@ -289,7 +289,7 @@
               <div class="mu-contact-content">
                 <div class="row">
 
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="mu-contact-left">
                       <!-- Email message div -->
                       <div id="form-messages"></div>
@@ -315,28 +315,6 @@
                       </form>
                     </div>
                   </div>
-
-                  <div class="col-md-6">
-                    <div class="mu-contact-right">
-                      <div class="mu-contact-widget">
-                        <h3>Mailing Address</h3>
-                        <p>Kaibigang Pilipin@ <br>
-                          University of California, San Diego <br>
-                          9500 Gilman Dr. MC 0078 <br>
-                          La Jolla, CA 92093</p>
-
-                      </div>
-                      <div class="mu-contact-widget">
-                        <h3>General Body Meetings (GBM)</h3>
-                        <address>
-                          <p id="gbm-time"><i class="fa fa-calendar"></i>Wednesdays of Quarter Odd Weeks</p>
-                          <p><i class="fa fa-hourglass"></i>6 p.m. to 8 p.m.</p>
-                          <p><i class="fa fa-map-marker"></i>Cross-Cultural Center</p>
-                        </address>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
               </div>
             </div>
@@ -364,7 +342,8 @@
        <p><font size='4' color="FFA500">Q: How do I join Kaibigang Pilipin@?</font></p>
        <p>You don't have to do anything to join, just come to events and join our community! We have biweekly General Body Meetings where we can tell you more about Filipin@ culture, history, and upcoming events.</p>
        <p><font size='4' color="FFA500">Q: Where and when are the General Body Meetings?</font></p>
-       <p>They are held every odd week of the academic quarter on Wednesdays, 6 - 8 p.m. at the Communidad Large of the Cross-Cultural Center on the 2nd floor of Price Center East (above Burger King). </p>
+       <p style="display:inline">Our next meeting is </p><p id="gbm-time" style="display:inline"></p><p style="display:inline"> at 6 - 8 p.m. in the Communidad Large of the Cross-Cultural Center on the 2nd floor of Price Center East (above Burger King).</p>
+
        <p><font size='4' color="FFA500">Q: Do I have to be Filipin@ to join KP?</font></p>
        <p>Nope, we are all inclusive of all communities and identities! </p>
        <p><font size='4' color="FFA500">Q: How do I stay updated with information regarding KP?</font></p>
@@ -499,7 +478,7 @@
     hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
     ampm = d.getHours() >= 12 ? 'pm' : 'am',
     /*document.getElementById("gbm-time").innerHTML = "<i class='fa fa-calendar'></i>" + days[d.getDay()]+' '+months[d.getMonth()]+' '+ d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;;*/
-    document.getElementById("gbm-time").innerHTML = "<i class='fa fa-calendar'></i>" + days[d.getDay()]+' '+months[d.getMonth()]+' '+ d.getDate()+', '+d.getFullYear()+' ' +
+    document.getElementById("gbm-time").innerHTML = days[d.getDay()]+' '+months[d.getMonth()]+' '+ d.getDate()+', '+d.getFullYear()+' ' +
     '(Week ' + week + ')'
   </script>
 
