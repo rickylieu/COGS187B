@@ -1530,7 +1530,7 @@ RESERVATION SECTION
   width: 100%;
   position: relative;
   min-height: 250px;
-  max-height: 265px;
+  max-height: 250px;
   background-color: rgb(255, 165, 0);
   /*border-bottom: 3px solid;
   border-top: 3px solid;
@@ -1721,14 +1721,14 @@ RESERVATION SECTION
   display: inline;
   float: left;
   padding-top: 20px;
-  padding-bottom: 25px;
   width: 100%;
 }
 
 #mu-chef {
   display: inline;
   float: left;
-  padding: 50px 0;
+ /* padding: 50px 0;*/
+ padding-top: 20px;
   width: 100%;
 }
 
@@ -2515,7 +2515,7 @@ h5.events-text {
   padding-bottom: 10px;
 }
 
-#tim-img {
+#jon-img {
   height: auto;
   width: 40%;
   text-align: center;
@@ -2872,4 +2872,9 @@ h5.events-text {
 /*leadership*/
 .mu-single-chef:hover {
   opacity: 0.5;
+}
+
+@media all and (min-width: 768px) {
+  #constitution {
+  width: 50%; margin-left: 25%
 }

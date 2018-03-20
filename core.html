@@ -64,7 +64,7 @@
     }
 
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-    .active, .collapsible:hover {
+    .collapsible.active, .collapsible:hover {
       background-color: #ccc;
     }
 
@@ -104,8 +104,8 @@
           <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> About Us <i class="fa fa-caret-down"></i> </a>
-                <ul class="dropdown-menu">
+                <a href="#" data-toggle="dropdown" id="about-us-dropdown" class="dropdown-toggle"> About Us <i class="fa fa-caret-down"></i> </a>
+                <ul id="about-us-menu" class="dropdown-menu">
                   <li><a href="leadership.html">Leadership</a></li>
                   <li><a href="ourstory.html">Ourstory</a></li>
                   <li><a href="affiliates.html">Affiliates</a></li>
@@ -113,8 +113,8 @@
               </li>
               <li><a href="events.html">Events</a></li>
               <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Programs <i class="fa fa-caret-down"></i> </a>
-                <ul class="dropdown-menu">
+                <a href="#" data-toggle="dropdown" id="programs-dropdown" class="dropdown-toggle"> Programs <i class="fa fa-caret-down"></i> </a>
+                <ul id="programs-menu" class="dropdown-menu">
                   <li class="active"><a href="core.html">Community Outreach (CORE)</a></li>
                   <li><a href="star.html">Student Retention (STAR)</a></li>
                 </ul>
@@ -187,7 +187,7 @@
           <div class="card-content">
             <h4 class="title"></h4>
             <p class="category"><font color="black"><b><center>
-                <h3>High School Students Focused</h3>
+                <h4>High School Students Focused</h4>
               KP's Community Outreach to Realize Empowerment (KP CORE) provides students of underprivileged communities with the resources essential for access to higher education. </center></font></b></p>
           </div>
         </div>
@@ -242,10 +242,19 @@
  </button>
 
           <div class="content1">
-                            <p>Since 1992, High School Conference has been an integral program to the San Diego area as it has consistently and strongly been KP’s effort to outreach to high school students and encourage them to pursue higher education. Moreover, KP has striven to incorporate other programs throughout the year to maintain communication with these high school students such as a Kuya/Ate/Ading mentorship program with Mt. Carmel High School. However, few of these programs took off as successfully as High School Conference and most of them failed to continue throughout the years.</p>
+            <ul style="list-style-type:disc; padding-left:50px">
+                                <li>Since 1992, High School Conference has been an integral program to the San Diego area as it has consistently and strongly been KP’s effort to outreach to high school students and encourage them to pursue higher education.</li>
+                                <li>KP has striven to incorporate other programs throughout the year to maintain communication with these high school students such as a Kuya/Ate/Ading mentorship program with Mt. Carmel High School</li>
+                                <li>Few of these programs took off as successfully as High School Conference and most of them failed to continue throughout the years</li>
+                                <li>With the passage of the PULSE Referendum in 2007, SPACES was created, which allocated $8,000 to the core SAAC organizations, including KP, for programming focusing on access work; thus, KP CORE was born</li>
+                                <li>KP CORE was officially established in the 2007-2008 academic school year by Brent Cadavona (Chair), Aiza Arriola (Outreach Coordinator), and Keith Alminar.</li>
+                                <li>It was heavily modeled after UCLA’s Samahang Pilipino Advancing Community Empowerment (SPACE).</li>
+                               <li>In the 2009-2010 academic year, KP CORE gained access to work directly with Samuel F.B. Morse High School students, faculty, and administration.</li>
+                              </ul>
+                           
 
-                           <p>With the passage of the PULSE Referendum in 2007, SPACES was created, which allocated $8,000 to the core SAAC organizations, including KP, for programming focusing on access work; thus, KP CORE was born. KP CORE was officially established in the 2007-2008 academic school year by Brent Cadavona (Chair), Aiza Arriola (Outreach Coordinator), and Keith Alminar. It was heavily modeled after UCLA’s Samahang Pilipino Advancing Community Empowerment (SPACE). In the 2009-2010 academic year, KP CORE gained access to work directly with Samuel F.B. Morse High School students, faculty, and administration.
-                           </p>
+                            
+                         
           </div>
         </div>
  </section>

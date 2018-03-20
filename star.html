@@ -64,7 +64,7 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.collapsible.active, .collapsible:hover {
   background-color: #ccc;
 }
 
@@ -103,8 +103,8 @@
           <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> About Us <i class="fa fa-caret-down"></i> </a>
-                <ul class="dropdown-menu">
+                <a href="#" data-toggle="dropdown" id="about-us-dropdown" class="dropdown-toggle"> About Us <i class="fa fa-caret-down"></i> </a>
+                <ul id="about-us-menu" class="dropdown-menu">
                   <li><a href="leadership.html">Leadership</a></li>
                   <li><a href="ourstory.html">Ourstory</a></li>
                   <li><a href="affiliates.html">Affiliates</a></li>
@@ -112,10 +112,10 @@
               </li>
               <li><a href="events.html">Events</a></li>
               <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Programs <i class="fa fa-caret-down"></i> </a>
-                <ul class="dropdown-menu">
+                <a href="#" data-toggle="dropdown" id="programs-dropdown" class="dropdown-toggle"> Programs <i class="fa fa-caret-down"></i> </a>
+                <ul id="programs-menu" class="dropdown-menu">
                   <li><a href="core.html">Community Outreach (CORE)</a></li>
-                  <li class="header"><a href="star.html">Student Retention (STAR)</a></li>
+                  <li class="active"><a href="star.html">Student Retention (STAR)</a></li>
                 </ul>
               </li>
               <li><a href="alumni.html">Alumni</a></li>
@@ -264,12 +264,24 @@
  </button>
 
 <div class="content1">
-                  <p>Although UCSD prides itself based on its demographic numbers, the Filipino population at UCSD is a mere 5%. Seeing as how Filipinos generate the KP STAR target population, it is important that retention efforts are successful in order to retain the 5% of Filipinos at UCSD, avoiding loss of students through discomfort, disillusion and dropout rates. In addition, because 30% of students are first generation college students and 36% of students report that English is not their home language, such facts may become barriers for students, putting them at an educational disadvantage. Therefore, programs aimed specifically at the Filipino demographic are essential to maintain and hopefully increase the number of Filipinos on this campus.</p>
 
-                 <p>
-                  In 2001, a group of KP members made a trip to UCLA to find out about their Pilipin@ retention program, Samahang Pilipino Education and Academic Retention (SPEAR). Under the direction of Rene Gube (Vice-Chair Internal) and April Limcolioc (Freshperson Executive), KP decided to start its own retention component called STAR.</p>
+    <ul style="list-style-type:disc; padding-left:50px">
+                                <li>Although UCSD prides itself based on its demographic numbers, the Filipino population at UCSD is a mere 5%.</li>
+                                <li>Seeing as how Filipinos generate the KP STAR target population, it is important that retention efforts are successful in order to retain the 5% of Filipinos at UCSD, avoiding loss of students through discomfort, disillusion and dropout rates.</li>
+                                <li>Because 30% of students are first generation college students and 36% of students report that English is not their home language, such facts may become barriers for students, putting them at an educational disadvantage. </li>
+                                <li>Programs aimed specifically at the Filipino demographic are essential to maintain and hopefully increase the number of Filipinos on this campus.</li>
+                                <li>In 2001, a group of KP members made a trip to UCLA to find out about their Pilipin@ retention program, Samahang Pilipino Education and Academic Retention (SPEAR).</li>
+                                <li>Under the direction of Rene Gube (Vice-Chair Internal) and April Limcolioc (Freshperson Executive), KP decided to start its own retention component called STAR.</li>
+                               <li>The program hardly took off. The leadership had problems establishing STAR as a program and eventually no one else took the initiative to continue the initial vision.</li>
+                               <li>It was heavily modeled after UCLA’s Samahang Pilipino Advancing Community Empowerment (SPACE).</li>
+                               <li>Iin the 2005-2006 academic school year, David Reyes (Vice-Chair Internal), Sheryl Diaz (Vice-Chair External), and Christy Nierva (Staff Adviser) officially established KP STAR as a part of KP.</li>
+                               <li> With the formation of the Peer Counseling component, in conjunction with the addition of the Kuya/Ate/Ading and Tutoring components that had been present within KP since 1998, KP STAR was institutionalized.</li>
+                            
+                              </ul>
 
-                  <p>However, the program hardly took off. The leadership had problems establishing STAR as a program and eventually no one else took the initiative to continue the initial vision. However, in the 2005-2006 academic school year, David Reyes (Vice-Chair Internal), Sheryl Diaz (Vice-Chair External), and Christy Nierva (Staff Adviser) officially established KP STAR as a part of KP. With the formation of the Peer Counseling component, in conjunction with the addition of the Kuya/Ate/Ading and Tutoring components that had been present within KP since 1998, KP STAR was institutionalized.</p>
+                   
+
+
 </div></div>
 </section>
 
