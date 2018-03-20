@@ -1489,7 +1489,7 @@ RESERVATION SECTION
   display: inline;
   float: left;
   padding-top: 50px;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
   width: 100%;
 }
 
