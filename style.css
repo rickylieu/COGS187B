@@ -1530,7 +1530,7 @@ RESERVATION SECTION
   width: 100%;
   position: relative;
   min-height: 250px;
-  max-height: 265px;
+  max-height: 250px;
   background-color: rgb(255, 165, 0);
   /*border-bottom: 3px solid;
   border-top: 3px solid;
@@ -2873,3 +2873,4 @@ h5.events-text {
 .mu-single-chef:hover {
   opacity: 0.5;
 }
+class="active"
