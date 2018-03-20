@@ -69,8 +69,8 @@
           <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> About Us <i class="fa fa-caret-down"></i> </a>
-                <ul class="dropdown-menu">
+                <a href="#" data-toggle="dropdown" id="about-us-dropdown" class="dropdown-toggle"> About Us <i class="fa fa-caret-down"></i> </a>
+                <ul id="about-us-menu" class="dropdown-menu">
                   <li class="active"><a href="leadership.html">Leadership</a></li>
                   <li><a href="ourstory.html">Ourstory</a></li>
                   <li><a href="affiliates.html">Affiliates</a></li>
@@ -78,8 +78,8 @@
               </li>
               <li><a href="events.html">Events</a></li>
               <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Programs <i class="fa fa-caret-down"></i> </a>
-                <ul class="dropdown-menu">
+                <a href="#" data-toggle="dropdown" id="programs-dropdown" class="dropdown-toggle"> Programs <i class="fa fa-caret-down"></i> </a>
+                <ul id="programs-menu" class="dropdown-menu">
                   <li><a href="core.html">Community Outreach (CORE)</a></li>
                   <li><a href="star.html">Student Retention (STAR)</a></li>
                 </ul>
@@ -199,12 +199,6 @@
   </section>
   <!-- End Primary Board Section -->
 
-  <script> 
-function onHover() {
-  console.log("hovered")
-}
-
-</script>
   <!-- Start Primary Board Modal Section -->
     <!-- Start Upcoming Events Modals -->
 <!-- Modal -->
@@ -236,7 +230,7 @@ function onHover() {
           <div class="mu-chef-area">
 
             <div class="mu-title">
-              <h2>STAR Board</h2>
+              <h2>Student Retention (STAR) Board</h2>
             </div>
 
             <div class="mu-chef-content">
@@ -317,7 +311,7 @@ function onHover() {
           <div class="mu-chef-area">
 
             <div class="mu-title">
-              <h2>CORE Board</h2>
+              <h2>Community Outreach (CORE) Board</h2>
             </div>
 
             <div class="mu-chef-content">
@@ -428,6 +422,25 @@ function onHover() {
   </footer>
   <!-- End Footer -->
 
+<!--
+<script> 
+function dropdown() {
+  if(document.getElementById("about-us-dropdown").getAttribute("aria-expanded") == "true") {
+    document.getElementById("about-us-menu").style.visibility = "hidden"
+  }
+  else {
+    document.getElementById("about-us-menu").style.visibility = "visible"
+  }
+
+  if(document.getElementById("programs-dropdown").getAttribute("aria-expanded") == "true") {
+      document.getElementById("programs-menu").style.visibility = "hidden"
+  }
+  else {
+      document.getElementById("programs-menu").style.visibility = "visible"
+  }
+
+}
+</script>-->
 
     <!-- jQuery library -->
   <script src="assets/js/jquery.min.js"></script>

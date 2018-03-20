@@ -230,5 +230,26 @@ jQuery(function($){
               window.location.hash = target;
       });
   });
+
+
+  /* ----------------------------------------------------------- */
+  /*  11. DROPDOWN VISIBILITY
+  /* ----------------------------------------------------------- */
+
+  $('.dropdown-toggle').on('click', function (e) {
+  if($("#about-us-dropdown").attr("aria-expanded") == "true") {
+    $("#about-us-menu").css("visibility", "hidden")
+  }
+  else {
+    $("#about-us-menu").css("visibility", "visible")
+  }
+
+  if($("#programs-dropdown").attr("aria-expanded") == "true") {
+    $("#programs-menu").css("visibility", "hidden")
+  }
+  else {
+    $("#programs-menu").css("visibility", "visible")
+    }
+  });
   
 });
