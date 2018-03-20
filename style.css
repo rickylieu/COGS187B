@@ -2873,4 +2873,8 @@ h5.events-text {
 .mu-single-chef:hover {
   opacity: 0.5;
 }
-class="active"
+
+@media all and (min-width: 768px) {
+  #constitution {
+  width: 50%; margin-left: 25%
+}
